@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cyweb — Classic Cydia Web</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="app" class="cydia-root">
+  <header class="cydia-header">
+    <img src="assets/logo.jpeg" alt="Cyweb" class="cydia-logo">
+    <div class="cydia-title">
+      <div class="welcome">Welcome, to <strong>Cyweb</strong></div>
+      <div class="byline">by Jhulian Sevsix (jhu7600)</div>
+    </div>
+  </header>
+
+  <nav class="cydia-nav">
+    <ul>
+      <li class="active" data-tab="home">Home</li>
+      <li data-tab="sources">Sources</li>
+      <li data-tab="manage">Manage Account</li>
+      <li data-tab="search">Search</li>
+    </ul>
+  </nav>
+
+  <main class="cydia-main">
+    <section id="home" class="tab-panel">
+      <h2 class="section-title">Featured Tweaks</h2>
+      <div id="featured" class="grid"></div>
+      <div class="controls">
+        <button id="add-sample">Add Sample Repos</button>
+        <button id="refresh-all">Refresh All</button>
+      </div>
+    </section>
+
+    <section id="sources" class="tab-panel hidden">
+      <h2 class="section-title">Sources</h2>
+      <div class="repo-add">
+        <input id="repo-url" placeholder="Repository URL (https://.../)" />
+        <input id="repo-name" placeholder="Display name (optional)" />
+        <button id="add-repo-btn">Add Source</button>
+      </div>
+      <ul id="repo-list" class="repo-list"></ul>
+    </section>
+
+    <section id="manage" class="tab-panel hidden">
+      <h2 class="section-title">Manage Account / Create Repo</h2>
+      <form id="create-repo-form" class="create-form">
+        <label>Repo Name<input id="cr-name" required></label>
+        <label>Install URL<input id="cr-url" required placeholder="https://.../"></label>
+        <label>Icon URL<input id="cr-icon" placeholder="https://.../icon.png"></label>
+        <label>Compatibility<input id="cr-compat" placeholder="iOS 9+"></label>
+        <button type="submit">Create Repo (local)</button>
+      </form>
+      <div id="created-repos" class="created-repos"></div>
+    </section>
+
+    <section id="search" class="tab-panel hidden">
+      <h2 class="section-title">Search Packages</h2>
+      <input id="search-input" placeholder="Search package name or maintainer..." />
+      <div id="search-results" class="search-results"></div>
+    </section>
+
+    <!-- details modal -->
+    <div id="details" class="modal hidden">
+      <div class="modal-card">
+        <div class="modal-top">
+          <button id="modal-back" class="btn-flat">Back</button>
+          <div id="modal-title" class="modal-title">Tweak</div>
+          <button id="modal-install" class="btn-install">Install</button>
+        </div>
+        <div id="modal-content" class="modal-content"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="cydia-footer">Cyweb — Retro APT browser. Demo only. No real installs are performed.</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
