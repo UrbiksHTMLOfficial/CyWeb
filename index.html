@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>CyWeb</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<div class="app-root">
+  <header class="nav"><div class="nav-left">About</div><div class="nav-center">Home</div><div class="nav-right" id="reload">Reload</div></header>
+  <main class="main">
+    <section class="welcome">
+      <img class="welcome-icon" src="assets/logo_main.jpeg" alt="CyWeb">
+      <div class="welcome-text"><div class="welcome-title">Welcome to <strong>CyWeb™</strong></div><div class="welcome-by">by Jhulian Sevsix (jhu7600)</div></div>
+    </section>
+    <section class="social">
+      <a class="social-item" href="https://ivy.a1429.lol/user/350" target="_blank"><img src="assets/logo_ivy.jpeg" class="social-icon" alt="Ivy"><span>Ivy</span><span class="caret">›</span></a>
+      <a class="social-item" href="https://www.reddit.com/u/Wise-Firefighter7299/" target="_blank"><img src="assets/reddit.png" class="social-icon" alt="Reddit"><span>Reddit</span><span class="caret">›</span></a>
+    </section>
+    <ul class="list">
+      <li class="row"><img src="assets/icon_cydia.png" class="row-icon"><span>CyWeb</span><span class="chev">›</span></li>
+      <li class="row"><img src="assets/icon_star.png" class="row-icon"><span>Featured</span><span class="chev">›</span></li>
+      <li class="row"><img src="assets/icon_theme.png" class="row-icon"><span>Themes</span><span class="chev">›</span></li>
+      <li class="row highlight" id="manage-account"><img src="assets/icon_manage.png" class="row-icon"><span>Manage Account</span><span class="chev">›</span></li>
+      <li class="row"><span>Upgrading & Jailbreaking Help</span><span class="chev">›</span></li>
+      <li class="row"><span>Find Extensions for Applications</span><span class="badge">New</span><span class="chev">›</span></li>
+      <li class="row"><span>More Package Sources</span><span class="chev">›</span></li>
+    </ul>
+    <div class="section-title">USER GUIDES</div>
+    <ul class="list">
+      <li class="row"><span>Frequently Asked Questions</span><span class="chev">›</span></li>
+      <li class="row"><span>Copying Files to/from Device</span><span class="chev">›</span></li>
+      <li class="row"><span>OpenSSH Access How-To</span><span class="chev">›</span></li>
+      <li class="row"><span>Root Password How-To</span><span class="chev">›</span></li>
+      <li class="row"><span>Storage Information</span><span class="chev">›</span></li>
+    </ul>
+    <div class="section-title">DEVELOPERS ONLY</div>
+    <ul class="list">
+      <li class="row"><span>Useful Developer Resources</span><span class="chev">›</span></li>
+      <li class="row"><span>Credits / Thank You</span><span class="chev">›</span></li>
+    </ul>
+  </main>
+  <nav class="tabs">
+    <button class="tab active"><span class="tab-icon">★</span><span class="tab-label">CyWeb</span></button>
+    <button class="tab"><span class="tab-icon">📁</span><span class="tab-label">Sources</span></button>
+    <button class="tab"><span class="tab-icon">⏰</span><span class="tab-label">Changes</span></button>
+    <button class="tab"><span class="tab-icon">⬇️</span><span class="tab-label">Installed</span></button>
+    <button class="tab"><span class="tab-icon">🔍</span><span class="tab-label">Search</span></button>
+  </nav>
+</div>
+<div id="a2hs" class="a2hs hidden"><div class="a2hs-card"><div>Add CyWeb to your Home Screen for the best experience.</div><label><input type="checkbox" id="a2hs-dont"> Don't show again</label><button id="a2hs-ok">OK</button></div></div>
+<div id="repo-modal" class="modal hidden"><div class="modal-card"><h3>Create Repo</h3><label>Repo name<input id="r-name"></label><label>Description<input id="r-desc"></label><label>Icon URL<input id="r-icon"></label><label>Compatibility<input id="r-compat" placeholder="iOS 9+"></label><button id="r-create">Create Repo</button><button id="r-cancel">Cancel</button></div></div>
+<div id="tweak-modal" class="modal hidden"><div class="modal-card pkg"><div class="pkg-top"><button id="pkg-back" class="btn-flat">Back</button><div id="pkg-title" class="pkg-title">Tweak</div><button id="pkg-install" class="btn-install">Install</button></div><div id="pkg-body" class="pkg-body"></div></div></div>
+<script src="assets/config.json"></script><script src="assets/script.js"></script></body></html>
