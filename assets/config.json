@@ -1,5 +1,5 @@
 {
-  "mediator_api_url": "https://YOUR_MEDIATOR_URL_HERE",
+  "mediator_api_url": "https://https://cyweb-repo-servers.netlify.app/.netlify/functions/createRepo",
   "github_owner": "UrbiksHTMLOfficial",
   "github_repo": "CyWeb"
 }
